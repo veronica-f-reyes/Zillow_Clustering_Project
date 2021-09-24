@@ -120,7 +120,6 @@ def wrangle_zillow():
          'fullbathcnt',
          'heatingorsystemtypeid',
          'propertycountylandusecode',
-         'propertylandusetypeid',
          'propertyzoningdesc',
          'censustractandblock'
          ]
