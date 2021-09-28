@@ -40,36 +40,35 @@ DATA DICTIONARY:
 
 |Feature|Datatype|Definition|
 |:-------|:--------|:----------|
-
-|0   bathrooms                   |67490 non-null  float64|  number of bedrooms |      
-|1   bedrooms                    |67490 non-null  float64|  number of bathrooms  |     
-|2   buildingqualitytypeid       |67490 non-null  float64|  unique identifier classifying quality of building |     
-|3   sq_footage                  |67490 non-null  float64|  square footage of the building  |      
-|4   fips                        |67490 non-null  float64|  unique ID for location of county   |     
-|5   latitude                    |67490 non-null  float64|  geographical latitude of the property |     
-|6   longitude                   |67490 non-null  float64|  geographical longitude of the property |      
-|7   lotsizesquarefeet           |67490 non-null  float64|  square footage of the property lot |      
-|8   propertylandusetypeid       |67490 non-null  float64|  unique ID use to identify property type (i.e. 261 - Single Family Residential)|      
-|9   rawcensustractandblock      |67490 non-null  float64|  property tract and block as indicated on census |    
-|10  regionidcity                |67490 non-null  float64|  identifier for the city |     
-|11  regionidcounty              |67490 non-null  float64|  identifier for the county |     
-|12  regionidzip                 |67490 non-null  float64|  identifier the zip code |     
-|13  roomcnt                     |67490 non-null  float64|  number of rooms in property |    
-|14  unitcnt                     |67490 non-null  float64|  number of units on property |     
-|15  yr_built                    |67490 non-null  float64|  year property was built |     
-|16  structuretaxvaluedollarcnt  |67490 non-null  float64|  dollar value for the structure only |      
-|17  tax_value                   |67490 non-null  float64|  value of the property in dollars  |       
-|18  assessmentyear              |67490 non-null  float64|  year the property was assessed |      
-|19  landtaxvaluedollarcnt       |67490 non-null  float64|  dollar value of the land only   |  
-|20  taxamount                   |67490 non-null  float64|  tax amount due for that property  |     
-|21  logerror                    |67490 non-null  float64|  logarithmic error of the estimate of value |     
-|22  transactiondate             |67490 non-null  datetime64[ns]|  date of the sale of the property |
-|23  heatingorsystemdesc         |67490 non-null  object  |  description of the heating system |   
-|24  propertylandusedesc         |67490 non-null  object  |  description of property type (i.e. Condominium, Townhome, Single Family Residential)|     
-|25  county                      |67490 non-null  object  |  county the property is located in|     
-|26  sq_footage_bins             |67490 non-null  category  |  square footage range of property (i.e. 1000 - 2000) |
-|27  month                       |67490 non-null  int64  |    month the property was sold |   
-|28  month_bins                  |67490 non-null  category |  range of months the property was sold between|
+|0   bathrooms                   |67490 non-null  float64|  number of bedrooms |                |    
+|1   bedrooms                    |67490 non-null  float64|  number of bathrooms  |               |    
+|2   buildingqualitytypeid       |67490 non-null  float64|  unique identifier classifying quality of building |                |   
+|3   sq_footage                  |67490 non-null  float64|  square footage of the building  |                 |   
+|4   fips                        |67490 non-null  float64|  unique ID for location of county   |                 |  
+|5   latitude                    |67490 non-null  float64|  geographical latitude of the property |                |   
+|6   longitude                   |67490 non-null  float64|  geographical longitude of the property |               |     
+|7   lotsizesquarefeet           |67490 non-null  float64|  square footage of the property lot |                  |  
+|8   propertylandusetypeid       |67490 non-null  float64|  unique ID use to identify property type (i.e. 261 - Single Family Residential)|                 |   
+|9   rawcensustractandblock      |67490 non-null  float64|  property tract and block as indicated on census |              |    
+|10  regionidcity                |67490 non-null  float64|  identifier for the city |                  | 
+|11  regionidcounty              |67490 non-null  float64|  identifier for the county |               |    
+|12  regionidzip                 |67490 non-null  float64|  identifier the zip code |                  | 
+|13  roomcnt                     |67490 non-null  float64|  number of rooms in property |                |  
+|14  unitcnt                     |67490 non-null  float64|  number of units on property |                |   
+|15  yr_built                    |67490 non-null  float64|  year property was built |                 |  
+|16  structuretaxvaluedollarcnt  |67490 non-null  float64|  dollar value for the structure only |                |    
+|17  tax_value                   |67490 non-null  float64|  value of the property in dollars  |               |      
+|18  assessmentyear              |67490 non-null  float64|  year the property was assessed |                |    
+|19  landtaxvaluedollarcnt       |67490 non-null  float64|  dollar value of the land only   |                |
+|20  taxamount                   |67490 non-null  float64|  tax amount due for that property  |                 |  
+|21  logerror                    |67490 non-null  float64|  logarithmic error of the estimate of value |                 |  
+|22  transactiondate             |67490 non-null  datetime64[ns]|  date of the sale of the property |              |
+|23  heatingorsystemdesc         |67490 non-null  object  |  description of the heating system |                | 
+|24  propertylandusedesc         |67490 non-null  object  |  description of property type (i.e. Condominium, Townhome, Single Family Residential)|                |   
+|25  county                      |67490 non-null  object  |  county the property is located in|                |   
+|26  sq_footage_bins             |67490 non-null  category  |  square footage range of property (i.e. 1000 - 2000) |              |
+|27  month                       |67490 non-null  int64  |    month the property was sold |                 |
+|28  month_bins                  |67490 non-null  category |  range of months the property was sold between|              |
 
 
 DATA SCIENCE PIPELINE
