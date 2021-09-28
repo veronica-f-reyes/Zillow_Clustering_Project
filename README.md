@@ -165,7 +165,6 @@ Null Hypothesis: There is no correlation between latitude and log error .
 Alternative Hypothesis: Latitude and log error are correlated.
 
 Finding: 
-
     - We reject the null hypothesis that there is no correlation between latitude and log error .
 
 Hypothesis 2:
