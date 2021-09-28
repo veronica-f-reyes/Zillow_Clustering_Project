@@ -275,9 +275,36 @@ def remove_outliers(df, k, col_list):
 def minMax(x):
     return pd.Series(index=['min','max'],data=[x.min(),x.max()])
 
+#FUNCTION that takes in a train, validate, test and returns a Standard scaler with the train_scaled, validate_scaled, and test_scaled
+def Standard_Scaler(X_train, X_validate, X_test):
+    """
+    Takes in X_train, X_validate and X_test dfs with numeric values only
+    Returns scaler, X_train_scaled, X_validate_scaled, X_test_scaled dfs
+    """
+
+    scaler = sklearn.preprocessing.StandardScaler().fit(X_train)
+    X_train_scaled = pd.DataFrame(scaler.transform(X_train), index = X_train.index, columns = X_train.columns)
+    X_validate_scaled = pd.DataFrame(scaler.transform(X_validate), index = X_validate.index, columns = X_validate.columns)
+    X_test_scaled = pd.DataFrame(scaler.transform(X_test), index = X_test.index, columns = X_test.columns)
+    
+    return scaler, X_train_scaled, X_validate_scaled, X_test_scaled
+
+#FUNCTION that takes in a train, validate, test and returns a Min Max scaler with the train_scaled, validate_scaled, and test_scaled
+def Min_Max_Scaler(X_train, X_validate, X_test):
+    """
+    Takes in X_train, X_validate and X_test dfs with numeric values only
+    Returns scaler, X_train_scaled, X_validate_scaled, X_test_scaled dfs 
+    """
+    scaler = sklearn.preprocessing.MinMaxScaler().fit(X_train)
+    X_train_scaled = pd.DataFrame(scaler.transform(X_train), index = X_train.index, columns = X_train.columns)
+    X_validate_scaled = pd.DataFrame(scaler.transform(X_validate), index = X_validate.index, columns = X_validate.columns)
+    X_test_scaled = pd.DataFrame(scaler.transform(X_test), index = X_test.index, columns = X_test.columns)
+    
+    return scaler, X_train_scaled, X_validate_scaled, X_test_scaled
+
+
+
 # functions to create clusters and scatter-plot:
-
-
 def create_cluster(df, X, k):
     
     """ Takes in df, X (dataframe with variables you want to cluster on) and k

@@ -1,34 +1,33 @@
 # README for  Zillow Clustering Project
 # Zillow: What is driving the errors in the Zestimates?
 
-### Background:
+## Background:
 Zillow, a real estate website in the United States, uses a Zestimate to estimate a property's market value.
 "The Zestimate® home valuation model is Zillow’s estimate of a home’s market value. A Zestimate incorporates public, MLS and user-submitted data into Zillow’s proprietary formula, also taking into account home facts, location and market trends. It is not an appraisal and can’t be used in place of an appraisal." - zillow.com
 For this project, we will look into finding drivers of error in the Zestimate. Using clustering methodologies, feature identification and comparison, visualizations, statistical testing, and regression models, we are to find drivers of error to predict log error.
 
-#### Project Goals:
-Using Zillow data for single unit/single family homes sold in 2017, find drivers of log error in the Zestimate.
+## Project Goals:
 Create 4 regression models to predict log error
 Use clustering methodologies to help identify drivers of log error
 Deliver findings in a final Jupyter Notebook presentation
 
 ## Executive Summary:
-#### Technical Findings:
-- I was successfully able to create 4 regression models to predict log error with one model beating the baseline.
-- Using clustering, I was able to confirm that latitude, longitude, number of bedrooms, and square footage may be drivers of error.
-- The Ordinary Least Squares (OLS) Linear Regression model performed best on validate and was chosen to be used on unseen, out of sample data.
-- The Linear Regression model was able to beat the baseline thus possibly reduce log error in actual predictions.
 
-#### What Does This Mean for our Zestimate?
+### What Did We Find Out About Error in the Zestimate?
+We were successfully able to create regression models to predict log error but only one model showed slight improvement from the baseline.
 Our model was able to reduce log error by 3% in out of sample data.
 Features chosen for the model that may be drivers of error include bedrooms, bathrooms, square footage, latitude and longitude.
 Even though the model performed slightly better than the baseline, all models seem to indicate that there may not be many significant drivers of log error in this data.
-
-#### Next Steps:
+### Next Steps:
 With more time, I would like to try running models on the clusters since they showed dependency on log error
 I would also like to keep exploring other features and clusters in the models.
 I would try different hyper parameters and explore other models available for predicting log error.
 
+### Technical Findings:
+- I was successfully able to create multiple regression models to predict log error with one model beating the baseline.
+- Using clustering, I was able to confirm that latitude, longitude, number of bedrooms, and square footage may be drivers of error.
+- The Ordinary Least Squares (OLS) Linear Regression model performed best on validate and was chosen to be used on unseen, out of sample data.
+- The Linear Regression model was able to beat the baseline thus possibly reduce log error in actual predictions.
 
 
 DATA DICTIONARY:
@@ -216,10 +215,7 @@ DELIVER:
 -------
 
 - Present findings in a review of a final Jupyter Notebook.
-
-    - The report/presentation should summarize findings about the drivers of log error. 
-
-
+- The report/presentation should summarize findings about the drivers of log error. 
 - A github repository containing your work with any .py files required to acquire and prepare the data and a clearly labeled final Jupyter Notebook that walks through the pipeline.
 
 
@@ -228,13 +224,13 @@ HOW TO RECREATE THIS PROJECT:
 
 To recreate this project you will need the following files from this repository:
 - README.md
-- env.py
+- env.py*
 - wrangle_excs.py
 - Final_Clustering_Project_Notebook.ipynb
 
-Your own env file requires  your data base credentials to connect to the SQL database containing Zillow data 
+*Your personal env file requires  your data base credentials to connect to the SQL database containing Zillow data 
 
-Instructions:
+### Instructions:
 - Read the README.md
 - Download the wrangle_excs.py and Final_Clustering_Project_Notebook.ipynb files into your working directory, or clone this repository
 - Add your own env file to your directory (user, password, host)  
