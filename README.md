@@ -1,5 +1,6 @@
-# README for  Zillow Clustering Project
-# Zillow: What is driving the errors in the Zestimates?
+## README for  Zillow Clustering Project
+***
+## Zillow: What is driving the errors in the Zestimates?
 
 ## Background:
 Zillow, a real estate website in the United States, uses a Zestimate to estimate a property's market value.
@@ -7,7 +8,7 @@ Zillow, a real estate website in the United States, uses a Zestimate to estimate
 For this project, we will look into finding drivers of error in the Zestimate. Using clustering methodologies, feature identification and comparison, visualizations, statistical testing, and regression models, we are to find drivers of error to predict log error.
 
 ## Project Goals:
-Create 4 regression models to predict log error
+Create at least 4 regression models to predict log error
 Use clustering methodologies to help identify drivers of log error
 Deliver findings in a final Jupyter Notebook presentation
 
